@@ -3,7 +3,7 @@ const backToTopBtn = document.querySelector("#back-to-top");
 window.addEventListener("scroll", function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > 300) {
+  if (scrollTop >= 0) {
     backToTopBtn.style.display = "block";
   } else {
     backToTopBtn.style.display = "none";
